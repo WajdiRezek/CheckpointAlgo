@@ -1,0 +1,34 @@
+ALGORITHM Checkpoint
+VAR
+ Bonjour : CHAR;
+ cc, cm, cv : INTEGER:=0 ;
+    
+BEGIN
+    REPEAT
+    write("Donnez un char")
+    read(Bonjour)
+
+    cc := cc+1 ;
+
+    if (Bonjour = ' ') THEN 
+    cm := cm+1 ;
+
+       END_IF
+
+        IF (Bonjour = 'a' OR  = 'e' OR Bonjour = 'i' OR Bonjour = 'u' OR Bonjour = 'y' OR Bonjour ='o' OR Bonjour = 'A' OR Bonjour = 'E' OR Bonjour = 'I' OR Bonjour = 'U' OR Bonjour = 'Y' OR Bonjour ='O') THEN
+            cv := cv + 1;
+        END_IF
+
+    UNTIL (Bonjour = '.')
+
+    Write("Le nombre de char est", cc);
+    Write("Le nombre de mots est",cm + 1)
+    Write("Le nombre de voy est",cv)
+
+        
+    
+    
+    
+   
+    
+END
